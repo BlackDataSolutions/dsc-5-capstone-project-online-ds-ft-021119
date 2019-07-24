@@ -60,33 +60,33 @@ I learned a lot about the history of games and how it has changed recently throu
 Below are a few key visuals for each category, and below that is a summary of key findings through EDA
 
 
-![GitHub Logo](ReleaseOverTime.PNG)
+![Releases Over Time](ReleaseOverTime.PNG)
 
 
-<center><img src='RegionalSalesByPlatform.png'>
+![Regional Platform Sales](RegionalSalesByPlatform.PNG)
 
 * The PS2 has been the dominant console force for the last two decades. PS3 and PS4 are also in the top 5, a great showing by Sony. 
 
-<center><img src='GenreHitsVsNon.png'>
+![Genre Hits](GenreHitsVsNon.PNG)
 
 ### Console War Summary
 
-<center><img src='ConsoleWars.png'>
+![Console Wars](ConsoleWars.PNG)
 
 Much of the EDA process was spent pitting consoles against each other in various metrics. Ultimately, Sony performed the best particularly with the PS2 and the PS4, but Microsoft did well with their XBox 360 and Nintendo is making it's way back into the competition with the rise of the Switch. 
 
 
 
-<left><img src='ManufacturerComparison.png'>
-<left><img src='6thto8thGen.png'>
+![Manufactureres](ManufacturerComparison.PNG)
+![6th to 8th Gen](6thto8thGen.PNG)
 
 ### About Text NLP EDA
 
 In addition to looking at numeric and categorical features in the datasets, I was also curious if there was any correlation between the description of a game and whether or not that game was successful. As part of EDA, I created a list of top words used in successful and failed games and compared them against one another. I also created some word clouds.
 
-<left><img src='topwordscomparison'>
+![Top Words Comparison](topwordscomparison.PNG)
 
-<left><img src='HitSteamGamesCloud'>
+![Cloud Hit Steam Games](HitSteamGamesCloud.PNG)
 
 
 ## Modeling
@@ -117,7 +117,7 @@ After getting some sub-par results to start, I decided to further preprocess the
 
 After these changes, I was able to get an XGB model to 82% accuracy, with indications that it was not overfitting. The confusion matrix and classification report are below.
 
-<left><img src='XGBResult.png'>
+![XGB Results](XGBResult.PNG)
 
 ### Deep Learning Modeling
 
@@ -132,7 +132,7 @@ I also wanted to attempt a neural network to classify whether or not a game woul
 
 Overall, achieved very similar metrics to the XGB above, but showed promising loss and accuracy over repeated epochs
 
-<left><img src='TrainingValidationAnalysis.png'>
+![Training Validation](TrainingValidationAnalysis.PNG)
 
 
 ### Modeling Part 2: NLP Deep Learning Model
@@ -143,7 +143,7 @@ Before I started this, as a gamer myself I was pessimistic. I can't tell you the
 
 I attempted both self-embedding and pre-trained embedding, and to nobody's surprise the pre-trained embeddings performed better. Even though I was only able to use the smallest pre-trained embedding list from GloVe (6 billion embeddings), it still out-performed self trained embeddings. Below are the results for the highest performing deep learning NLP model. 
 
-<left><img src='GloveModelSummary.png'>
+![Glove Summary](GloveModelSummary.PNG)
 
 ### Modeling Part 3: Bringing the Data Together!
 
@@ -159,7 +159,7 @@ Using the first model, I attempted to predict which games in 2016 (that had not 
 
 It is now 2019, and checking this list against 2019 figures yields that most of these ended up becoming hits. So even though the model was trained on limited data, it has practical application! 
 
-<left><img src='2016 Prediction'>
+![2016 Predictions](2016 Prediction.PNG)
 
 
 # Conclusion
