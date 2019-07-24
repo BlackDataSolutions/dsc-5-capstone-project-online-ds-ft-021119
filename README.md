@@ -1,114 +1,187 @@
 
-# Module 5 - Final Project Requirements
+# Video Game Hit Prediction
 
-## Introduction
+The video game industry is growing at an unprecedented rate. Handheld mobile games, PC Gaming accessibility, and virtual reality have all helped bring what was once a small, niche industry into the mainstream media. Tens of thousands of games are released each year, some by small independent publishers, and others by massive, triple A studios. 
 
-In this lesson, we'll discuss the requirements and expectations for the Module 5 Capstone Project!
-
-## Objectives
-
-You will be able to:
-
-* Describe all required aspects of the final project for Module 5
-* Describe all required deliverables
-* Describe what constitutes a successful project
-* Describe what the experience of the project review should be like
+Now more than ever it is important to be able to predict if a game will sell well or not. Developers are under increasing pressure to hit deadlines and download targets. At the same time, users and critics alike have never been tougher on evaluating and rating the video games that they play. 
 
 
-### Final Project Requirements
-
-Congratulations on making it to module 5! It's been a long journey, but we can finally see the light at the end of the tunnel!
-
-<center><img src='end-of-tunnel.gif'>
-<strong><em>Actual Footage of you seeing the light at the end of the tunnel</strong></em>
-</center>
-
-Now that you've learned everything we have to teach you, it's time to show off and flex your data science muscles with your own **_Capstone Project_**! This project will allow you to showcase everything you've learned as a data scientist to by completing a professional-level data science project of your choosing. This project will be significantly larger than any project you've completed so far, and will be the crown jewel of your portfolio. A strong capstone project is the single most important thing you can do to get the attention of potential employers, so be prepared to put as much effort into this project as possible--the results are **_worth it!_**
-
-<center><img src='milkshake.gif'>
-<strong><em>Your <s>milkshake</s> portfolio brings all the <s>boys</s> employers to <s>the yard</s> your inbox! </strong></em>
-</center>
-
-Let's take a look at the project requirements.
-
-### Topic requirements
-The projects are in a domain of your choosing.  Your project does not have to answer just one question, but may try to answer multiple questions in a domain, or subsequent questions.  (e.g. Now that we know _X_, what's the next question that comes from this?)  When choosing a topic, try to think through the "So what?" of your question.  
-
-* What are the possible outcomes you think you will find? These should be both mutually exclusive and collectively exhaustive. Why do these matter?
-* How could a company or individual make use of your findings to benefit them? What about your findings are _actionable_?
-
-You're completely free to choose any project topic that interests you. However, the project scope must be end-to-end, from data sourcing and cleaning all the way through tuning and analysis of your trained model(s).
-
-Make sure to plan in advance for the feasibility of the question in the time allowed--consider the following questions when selecting your project topic:
-
-* What version this question would allow me to find an answer in 2-3 days?
-* What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
-
-### Technical Requirements
-
-Your project must meet the following technical requirements:
-
-1. **_No Off-The-Shelf Datasets_**. This project is a chance for you to highlight your critical thinking and data gathering skills by finding the perfect dataset to answer your question. If a pre-existing dataset exists that you'd like to use, it is okay to use it in your project. However, you should consider combining it with other existing sources of data, modifying the dataset through feature engineering. The goal here is to showcase your ability to find and work with data, so just grabbing Boston Housing Dataset or the MNIST dataset is out of the question. 
-
-2. **_Strong Data Exploration, with at least 4 relevant data visualizations._** Think of this project as a way for you to showcase your best possible work in every area that matters. There are few skills that impress employers more than the ability to dive into a new dataset and produce engaging visualizations that communicate important information. For this project, anything worth knowing is worth visualizing. Consider all that you have learned, and don't be afraid to dig into more advanced visualization libraries like seaborn to see what you make! You should make use of visualizations whenever possible during this project, not just during the Data Exploration phase--for instance, consider visualizing your confusion matrices rather than just printing them out as text!
-
-3. **_Makes use of Supervised Learning_**. This requirement dovetails with having a well-defined question, because you'll make use of supervised learning to find the answer! It is both acceptable and encouraged to make use of **_Unsupervised Learning_** techniques as needed in your project (for instance, segmentation with clustering algorithms), but the supervised learning should play a central role in answering your question. 
-
-4. **_Explicitly makes use of a Data Science Process such as OSEMN or CRISP-DM_**. This part is fairly straightforward--you should select a Data Science Process to use and then use this to give structure to your project. Each section should be clearly delineated in your Jupyter Notebook.
-
-5. **_A well-defined question, with a well-defined answer._** Your project should clearly state the question you are trying to answer, and provide any background context needed to understand it. For instance, if you are trying to detect faultlines using Earthquake data, you should provide a brief primer on both the topic and your dataset so that the reader can better understand your topic and approach. Similarly, the findings of your project should be clearly communicated. Do not just tell your audience the final accuracy of your models--be sure to answer "big picture" questions as well. For instance--why are these findings important or useful? Would you recommend shipping this model to production, or is more work needed? Who are these findings useful to, and why should they care? **_NOTE:_** Inconclusive results are okay--from a purely scientific perspective, they are no more or less important or valuable than any other kinds of results. If your results are inconclusive, you should discuss what your next steps would be from there. For instance, what do you think it would take to get conclusive results--more data? Different data that was unavailable? Both? 
+## Problem Statement: Is it possible to build a model that will predict whether or not a game will be a "hit" using critic and user scores, revenue, and categorical features?
 
 
-### Deliverables
+## Data Source Overview
 
-The deliverable for this project will be three components:
+This data pulled from two very separate data sources and attempted to pull them together. 
 
-1. A **Jupyter notebook** for a presentation.  This will end up being the readme on your github. 
-  * The Jupyter notebook will have two components:
-    1. An **_Abstract_** section that briefly explains your problem, your methodology, and your findings, and business recommendations as a result of your findings. This section should be 1-2 paragraphs long.  
-    2. The technical analysis for a data science audience. This detailed technical analysis should explicitly follow a Data Science Process as outlined in the previous section. It should be well-formatted and organized, and should contain all code, visualizations, and detailed explanations/analysis.
-2. A **blog post** showcasing your project, with a focus on your methodology and findings. A well-written blog post about your project will probably be the first thing most recruiters and hiring managers will see, so really take the time to polish up this blog post and explain your project, methodology, and findings/business recommendations in a clear, concise manner. This blog post should cover everything important about your project, but remember that your audience for this blog post will largely be non-technical. Your blog post should definitely contain visualizations, code snippets, and anything else you find important, but don't get bogged down trying to explain highly technical concepts. Your blog post should provide a link to the GitHub repo containing your actual project, for people that want to really dive into the technical aspects of your project.
-3. A **video walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
+### 1. VGChartz.com web-scraped data
+
+* This data was pulled using beautiful soup in early 2019. In order to replicate the pull, I found a script written by a fellow gaming programmer that was updated in early 2016. SOURCE: https://github.com/ashaheedq/vgchartzScrape
+* I downloaded and modified this script, ensuring that I could run it myself and updating it for a few additional features I wanted to scrape.
+* While ultimately I didn't end up using my own script to form the data, I successfully created a partial file that tested if my modified API script worked.
+* My modified version of this script is included in a folder in this repository. 
+* The script pulled roughly 20,000 records of games released in the past 35 years
+
+* This data primarily contained the following information that would be used in modeling
+* Sales info: Global and regional
+* Critic and user score: Average score given by all critics and users
+* Year of Release
+* Categorical Information: Platform, Genre, Publisher
+
+### 2. Steamdb.info, SteamAPI, and SteamSpy web-scraped data
+
+* This data was pulled using a method unbeknownst to me and undocumented in the data source.
+* It combines information about PC video games hosted on Steam: a massive video game launcher
+* SteamSpy is a website which constantly updates using Steam's API to show how many people own a game and how many people have played a game
+* SteamSpy does not have a publically available API
+* Steamdb.info is a similar service which tracks how many players are currently playing a game. This is a very difficult website to download any sort of information from, and they even state that they did not build an API so people would not be able to use their website for profit and individual projects. 
+* Luckily, someone much smarter than me figured out how to combine all of this data in a webscrape done near the end of 2016
+* The dataset contains roughly 15,000 steam games released in the past 25 years
 
 
-### Final Project Proposals (2 project ideas)
 
-Selecting the right topic and selecting a problem with the appropriate scope can make or break a good project before you even begin. When starting, try to think up at least 2 different project ideas to explore that you can discuss with your instructor. Consider the following questions when coming up with your project. 
+## Scrubbing and Updating the Data
 
-#### Project Ideation Questions
+Before I even began analysis on this data, I had to do a significant amount of work to get it into EDA shape. The 2019 vgchartz data that I had scraped was incomplete in many areas, so dealing with null values was a pain. Luckily I found an older pull of a similar vgchartz script from 2016 that had a pristine pull. Nearly no data was missing from the vgchartz scrape up through 2016. As such, I combined the complete, clean 2016 dataset with the 2019 dataset I scraped. This was an obstacle because I was unsure of which sales numbers to use for 2015/2016, should I use the clean 2016 numbers? Or the slightly less clean updated 2019 numbers. I settled on updating 2016 sales numbers with 2019 figures, but for all data before the year 2016 I would use the cleaner 2016 data.
 
-1. What question/questions are you trying to solve?
-  * What are the outcomes you think you will find (could use mutually exclusive collectively exhaustive for this)? Why do they matter?
-  * How would a person or business take action upon learning the results of your project? How will your findings be _useful_?
-  * What version this question would allow me to find an answer in 2-3 days?
-  * What version of this question would allow me/motivate me to work on this problem even after completing Flatiron School?
+## Exploratory Data Analysis
 
-2. What are some data sources that would allow you to answer this?
-  * What is the ideal data you would hope to gather to answer this question?  
-  * Potentially missing data, that could cause omitted variable bias?
-4. Is this a classification task? A regression task? Both?
-5. What are the challenges or obstacles you foresee with this project?
-6. What are your next steps moving forward?
+As I entered this project, I knew EDA was going to be a key aspect of my project. 20,000 games is not a ton to work with, and I was particularly interested in the "Console War" between Nintendo, Sony, and Microsoft. I knew that gaining insight into these issues with hit detection machine learning would be difficult, so I focused much of my project time on creating effective visuals and organizing information in a way that allowed me to compare the performance of consoles against each other. 
 
-### Example Student Project
+### Establishing what a "Hit" was. 
 
-To give you a frame of reference, take a look at this amazing [technical report](https://github.com/paulinaczheng/twitter_flu_tracking) from a previous student that used tweet data to predict the weekly number of flu cases during flu season. Pay attention to how well structured the project is, and how much she relies on great visualizations to tell her story for her. Your explanations don't have to be wordy--a visualization is worth a thousand words!
+In order to do classification and modeling, I needed to establish which games were "hits" according to the sales data. I settled somewhat arbitrarily on 1 million units, because it was roughly around the 90% of the data, and it was a nice round number to discuss with a non-technical audience. 
 
-# Summary
+For all games, I classified them as "Hit" if they sold over 1 million copies, or "Not-Hit" if they failed to reach that marker. 
 
-The Capstone Project and project review are the most critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with. Most importantly, they provide employers with a very strong signal about your technical abilities, and allow you to show the world what an amazing Data Scientist you've become!
 
-The projects are serious and important. They are not graded, but they can be passed and they can be failed. Take the project seriously, put the time in, ask for help from your peers or instructors early and often if you need it, and treat the review as a job interview and you'll do great. We're rooting for you to succeed and we're only going to ask you to take a review again if we believe that you need to. We'll also provide open and honest feedback so you can improve as quickly and efficiently as possible.
+### Exploring by Genre, Platform, Year, and Regionality
 
-We don't expect you to remember all of the terms or to get all of the answers right. If in doubt, be honest. If you don't know something, say so. If you can't remember it, just say so. It's very unusual for someone to complete a project review without being asked a question they're unsure of, we know you might be nervous which may affect your performance. Just be as honest, precise and focused as you can be, and you'll do great!
+I learned a lot about the history of games and how it has changed recently through this analysis. 
+Below are a few key visuals for each category, and below that is a summary of key findings through EDA
 
-## Submitting your Project
+<center><img src='ReleaseOverTime.png'>
 
-You’re almost done! In order to submit your project for review, include the following links to your work in the corresponding fields on the right-hand side of Learn.
+<center><img src='RegionalSalesByPlatform.png'>
 
-1. **GitHub Repo:** Now that you’ve completed your project in Jupyter Notebooks, push your work to GitHub and paste that link to the right. (If you need help doing so, review the resources [here](https://docs.google.com/spreadsheets/d/1CNGDhjcQZDRx2sWByd2v-mgUOjy13Cd_hQYVXPuzEDE/edit#gid=0).)
-_Reminder: Make sure to also add and commit a pdf of your non-technical presentation to the repository with a file name of presentation.pdf._
-2. **Blog Post:** Include a link to your blog post.
-3. **Record Walkthrough:** Include a link to your video walkthrough.
+* The PS2 has been the dominant console force for the last two decades. PS3 and PS4 are also in the top 5, a great showing by Sony. 
 
-Hit "I'm done" to wrap it up. You will receive an email in order to schedule your review with your instructor.
+<center><img src='GenreHitsVsNon.png'>
+
+### Console War Summary
+
+<center><img src='ConsoleWars.png'>
+
+Much of the EDA process was spent pitting consoles against each other in various metrics. Ultimately, Sony performed the best particularly with the PS2 and the PS4, but Microsoft did well with their XBox 360 and Nintendo is making it's way back into the competition with the rise of the Switch. 
+
+<left><img src='ManufacturerComparison.png'>
+<left><img src='6thto8thGen.png'>
+
+### About Text NLP EDA
+
+In addition to looking at numeric and categorical features in the datasets, I was also curious if there was any correlation between the description of a game and whether or not that game was successful. As part of EDA, I created a list of top words used in successful and failed games and compared them against one another. I also created some word clouds.
+
+<left><img src='topwordscomparison'>
+
+<left><img src='HitSteamGamesCloud'>
+
+
+## Modeling
+
+### Modeling Part 1: VGChartz data hit prediction
+
+As I began modeling, I first ran vanilla machine learning classifiers. I ran 8 machine learning algorithms and compared their training and validation accuracies to determine which would be the best models. 
+
+Because I used global_sales to determine what was a hit, all of the sales figures became too highly correlated with the target variable to be useful in machine learning. For this reason, I was left with only 4 continuous variables to work with.
+
+* User Count
+* User Score
+* Critic Score
+* Critic Count
+* Year (pseudo numerical)
+
+The other variables I had to use were categorical...
+
+* Genre
+* Platform
+* Publisher
+
+After getting some sub-par results to start, I decided to further preprocess the data to reduce dimensionality and hopefully improve results. Here are a few details and steps that I took.
+
+* Reduced number of publishers by binning by number of games released in the past 15 years.
+* Reduced dimensionality by utilizing PCA (Principal Component Analysis)
+* Reduce overfitting to non-hits by using SMOTE to synthetically oversample
+
+After these changes, I was able to get an XGB model to 82% accuracy, with indications that it was not overfitting. The confusion matrix and classification report are below.
+
+<left><img src='XGBResult.png'>
+
+### Deep Learning Modeling
+
+I also wanted to attempt a neural network to classify whether or not a game would be a hit. Using architecture from past projects as a starting point, I ultimately landed on a neural network with the following layers...
+
+* 2 dense layers, one with L2 regularizers, both with relu activation
+* 2 dropout layers (50% each)
+* One activation layer- softmax
+* Adam optimizer(0.001)
+* Accuracy as optimizing metric
+* Trained over 20 epochs, 50 batch size
+
+Overall, achieved very similar metrics to the XGB above, but showed promising loss and accuracy over repeated epochs
+
+<left><img src='TrainingValidationAnalysis.png'>
+
+
+### Modeling Part 2: NLP Deep Learning Model
+
+For a project in the past, I had analyzed whether or not the text of a kickstarter page could determine whether or not that page would become funded. I decided to do something similar here, but instead use the description of a game to determine whether or not the game would be successful.
+
+Before I started this, as a gamer myself I was pessimistic. I can't tell you the last time I read a description of a game. If I want to know about a game, I'll typically watch reviews or youtube videos of gameplay. That being said, I knew it was possible because my Kickstarter idea was successful. 
+
+I attempted both self-embedding and pre-trained embedding, and to nobody's surprise the pre-trained embeddings performed better. Even though I was only able to use the smallest pre-trained embedding list from GloVe (6 billion embeddings), it still out-performed self trained embeddings. Below are the results for the highest performing deep learning NLP model. 
+
+<left><img src='GloveModelSummary.png'>
+
+### Modeling Part 3: Bringing the Data Together!
+
+When I set out on this project, I was extremely optimistic about combining the dataframes and utilizing all of their numeric columns to create a more powerful combined model. 
+
+However, as I actually combined the dataframe I learned that there were only around 300 games that were in both datasets. This was somewhat surprising, but I knew that vgchartz did not emphasize statistics for PC games. 
+
+Ultimately, I was able to create a model but there were only about 200 games that had complete data. As such, I know that this model is probably overfitted and not super useful for predictive purposes. But that doesn't mean I didn't try! Ultimately I found that XGB and Gradient Boost were the strongest performers. I have not attached the confusion matrix below but please see the Combined Data Exploration and Modeling notebook for more information. 
+
+### Predicting 2016 Hits
+
+Using the first model, I attempted to predict which games in 2016 (that had not become hits at the time) would become hits. Below is a list of the games most likely to become hits in 2016. 
+
+It is now 2019, and checking this list against 2019 figures yields that most of these ended up becoming hits. So even though the model was trained on limited data, it has practical application! 
+
+<left><img src='2016 Prediction'>
+
+
+# Conclusion
+
+Overall, I built some solid models that could predict with better than random accuracy whether or not a game would be a hit. I put this into practice by predicting which games released in 2016 would go on to become hits. Through EDA, I learned several interesting points about the console war.
+
+* Sony has been dominating, but PS4 sales are declining perhaps due to the rise of PC gaming
+* The WiiU was a dud, and significantly hurt Nintendo's profit margins
+* RPG games are MUCH more popular in Japan than they are anywhere else in the world
+* Nintendo has the highest hit percentage of any publisher by a good margin
+* Good descriptions of game introduce player to exciting game mechanics, and don't focus too much on story/generic play
+
+## Future Work/Improvements
+
+### Lack of Data
+
+One of the things this model suffered from the most was lack of data. For deep learning algorithms and even machine learning algorithms like the ones implemented in this notebook, more data is always better. After eliminating null values so all numerical columns could be used for modeling, there were only around 7,000 games left. This is enough to get results, but when iterating through 40 epochs like some of the deep learning models do, a small sample of training data is going to lead to model over-fitting and poorer test results. 
+
+Furthermore, for the most recent scrape of VGChartz data in 2019, the data was highly incomplete. The 2016 data had very few null values, especailly in crucial numeric modeling columns (User_Score, User_Count, Critic_Score, Critic_Count). As such, for the purposes of a functional model, most of the 2017 and 2018 data had to be scrubbed. 
+
+### Supporing Data
+
+Vgchartz is vague about the source of it's data. They explain that they collect their data from "sources within the industry" and "retail partners." VGChartz also uses statistical sampling methodology to estimate their sales numbers, so even these numbers are estimates without any sort of variance information provided.
+
+Ideally, there would be another third party website that collects video-game data, or individual game data would be released in company financial statements. However, no such granularity exists in quarterly or annual SEC filings from any of the three major console competitors: Microsoft, Sony, and Nintendo. 
+
+### Cost and Revenue Information
+
+The scrape of the data only had information on how many copies of each game had been sold, not at what price or at what cost. To do a more thorough business anlysis of the console war, cost and profit data could be incorporated into the model to define success. In general, finding a different metric besides copies shipped for a measurement of "hit" would allow more numeric columns to be processed for machine learning. 
