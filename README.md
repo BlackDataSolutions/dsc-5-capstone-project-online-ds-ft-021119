@@ -159,7 +159,7 @@ Using the first model, I attempted to predict which games in 2016 (that had not 
 
 It is now 2019, and checking this list against 2019 figures yields that most of these ended up becoming hits. So even though the model was trained on limited data, it has practical application! 
 
-![2016 Predictions](2016 Prediction.PNG)
+![2016 Predictions](2016Prediction.PNG)
 
 
 # Conclusion
