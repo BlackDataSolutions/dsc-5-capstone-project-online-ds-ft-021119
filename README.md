@@ -60,7 +60,7 @@ I learned a lot about the history of games and how it has changed recently throu
 Below are a few key visuals for each category, and below that is a summary of key findings through EDA
 
 
-![GitHub Logo](ReleaseOverTime.png)
+![GitHub Logo](ReleaseOverTime.PNG)
 
 
 <center><img src='RegionalSalesByPlatform.png'>
