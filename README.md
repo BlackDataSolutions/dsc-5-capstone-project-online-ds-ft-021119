@@ -59,7 +59,9 @@ For all games, I classified them as "Hit" if they sold over 1 million copies, or
 I learned a lot about the history of games and how it has changed recently through this analysis. 
 Below are a few key visuals for each category, and below that is a summary of key findings through EDA
 
-<center><img src='ReleaseOverTime.png'>
+
+![GitHub Logo](ReleaseOverTime.png)
+
 
 <center><img src='RegionalSalesByPlatform.png'>
 
@@ -72,6 +74,8 @@ Below are a few key visuals for each category, and below that is a summary of ke
 <center><img src='ConsoleWars.png'>
 
 Much of the EDA process was spent pitting consoles against each other in various metrics. Ultimately, Sony performed the best particularly with the PS2 and the PS4, but Microsoft did well with their XBox 360 and Nintendo is making it's way back into the competition with the rise of the Switch. 
+
+
 
 <left><img src='ManufacturerComparison.png'>
 <left><img src='6thto8thGen.png'>
